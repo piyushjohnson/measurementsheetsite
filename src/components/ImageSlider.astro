@@ -1,0 +1,140 @@
+<section>
+      <div class="swiper-container swiper-full-mobile swiper-container-initialized swiper-container-horizontal">
+         <div class="swiper-wrapper" >
+
+           <div class="swiper-slide">
+            <img src="/raw_screens/1.png" alt="">
+           </div>
+           
+           <div class="swiper-slide">
+            <img src="/raw_screens/2.png" alt="">
+           </div>
+           
+           <div class="swiper-slide">
+            <img src="/raw_screens/3.png" alt="">
+           </div>
+
+           <div class="swiper-slide">
+            <img src="/raw_screens/4.png" alt="">
+           </div>
+
+           <div class="swiper-slide">
+            <img src="/raw_screens/5.png" alt="">
+           </div>
+
+           <div class="swiper-slide">
+            <img src="/raw_screens/6.png" alt="">
+           </div>
+
+           <div class="swiper-slide">
+            <img src="/raw_screens/7.png" alt="">
+           </div>
+
+     </div>
+
+       <!-- Add Pagination -->
+       <div class="swiper-pagination"></div>
+   
+</section>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"/>
+<script>
+ var swiperMobile = new Swiper('.swiper-container.swiper-full-mobile', {
+      slidesPerView: 1,
+      slidesToScroll: 1,
+      spaceBetween: 50,
+      slideToClickedSlide:true,
+      centeredSlides:false,
+     pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+
+      },
+
+      loop:true,
+        keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
+
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+
+       breakpoints: {
+            
+            640: {
+              freemode:true,
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            320: {
+              freemode:true,
+              slidesPerView: 3,
+              spaceBetween: 20,
+            }
+      }
+
+    });
+</script>
+
+<style>
+:root {
+--dark-green: #9cc675;
+--dark-yellow: #e89a3d;
+--extra-light-brown:#fdf0d7;
+--light-brown: #ecd5ab;
+--dark-brown:#915b40;
+}
+
+
+.swiper-container {
+width: 100%;
+height: 100%;
+max-width: 560px;
+}
+
+.swiper-full-mobile {
+    position: relative;
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+
+.swiper-full-mobile:before {
+    content: "";
+    width: 300px;
+    background: url(https://storage.googleapis.com/answerforce/Website/images/business-line/frame@2x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right:0px;
+    top: 0px;
+    height: 650px;
+    margin: auto;
+}
+.swiper-full-mobile .swiper-slide {
+  height: 100%;
+}
+.swiper-full-mobile .swiper-slide img{
+  max-width: 250px;
+  height: auto;
+  margin-left: 180px;
+  z-index:9;
+}
+.swiper-slide.swiper-slide-active img {
+  border-radius: 10px;
+  width: 200px;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.swiper-pagination {
+  padding-top: 500px;
+}
+</style>

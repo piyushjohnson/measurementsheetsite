@@ -1,0 +1,90 @@
+---
+import '../styles/global.css';
+import '../styles/home.css';
+import { Markdown } from 'astro/components';
+let title = 'Privacy policy';
+
+---
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{title}</title>
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+	<style>
+		* {
+			display: border-box;		
+		}
+		header {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			max-width: min(100%, 68ch);
+		}
+	</style>
+</head>
+<body>
+	<main>
+    <article>
+      <header style="max-width: 100%;">
+          <div>
+            <a href="https://play.google.com/store/apps/details?id=com.piyushjohnson.measurementsheet">
+              <img style="width: fit-content;" src="/assets/msheet.svg" alt="MSheet logo">
+            </a>
+            <h1>Privacy Policy</h1>
+          </div>
+      </header>
+      
+      <section>
+        <hr/>
+        <Markdown>
+          **PRIVACY NOTICE**
+          <br></br>
+          **Last updated March 08, 2022**
+          <br></br>
+          This privacy notice for MeasurementSheet ("**Company**," "**we**," "**us**," or "**our**"), describes how and why we might collect, store, use, and/or share ("**process**") your information when you use our services ("**Services**"), such as when you:
+          <br></br>
+          - Download and use our application(s), such as our mobile application — MeasurementSheet, or any other application of ours that links to this privacy notice
+          <br></br>
+          - Engage with us in other related ways ― including any sales, marketing, or events
+          <br></br>
+          **Questions or concerns?** Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at piyushjohnson1998@gmail.com.
+          <br></br>
+
+          **SUMMARY OF KEY POINTS**
+          <br></br>
+          **_This summary provides key points from our privacy notice_**.
+          <br></br>
+          **What personal information do we process?** When you visit, use, or navigate our Services, we don't process personal information depending on how you interact with MeasurementSheet and the Services, the choices you make, and the products and features you use
+          <br></br>
+          **Do we process any sensitive personal information?** We do not process sensitive personal information.
+          <br></br>
+          **Do you receive any information from third parties?** We do not receive any information from third parties.
+          <br></br>
+          **How do you process my information?** We don't process your information to provide, improve, and administer our Services or communicate with you.
+          <br></br>
+          **In what situations and with which parties do we share personal information?** We don't share information in specific situations and with specific third parties.
+          <br></br>
+          **How do we keep your information safe?** We have organizational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information.
+          <br></br>
+          **What are your rights?** Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information.
+          <br></br>
+          **How do I exercise my rights?** The easiest way to exercise your rights is by filling out our data subject request form contact email here: piyushjohnson1998@gmail.com, or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
+          <br></br>
+
+          **DO WE MAKE UPDATES TO THIS NOTICE?**
+          <br></br>
+          _**In Short:** Yes, we will update this notice as necessary to stay compliant with relevant laws._
+          <br></br>
+          We may update this privacy notice from time to time. The updated version will be indicated by an updated "Revised" date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.
+          <br></br>
+          If you have questions or comments about this notice, you may email us at piyushjohnson1998@gmail.com.
+        </Markdown>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

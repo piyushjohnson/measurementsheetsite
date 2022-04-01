@@ -1,0 +1,69 @@
+---
+import { Markdown } from 'astro/components';
+import ImageSlider from './ImageSlider.astro'
+---
+
+<article>
+	<div class="banner">
+		<p><strong>🧑‍🚀 A simplified solution to create you sheets</strong></p>
+	</div>
+
+	<section>
+		<Markdown>
+
+		</Markdown>
+	</section>
+
+
+	<div>
+		<ImageSlider/>
+	</div>
+
+	<section>
+		<h2>👀 Want to learn more?</h2>
+		<p>Feel free to contribute at <a href="https://github.com/piyushjohnson/MeasurementSheet">github</a> or jump into our <a href="mailto:piyushjohnson1998@gmail.com">Mail</a>.</p>
+	</section>
+</article>
+
+<style>
+	article {
+		padding-top: 2em;
+		line-height: 1.5;
+	}
+	section {
+		margin-top: 2em;
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		max-width: 70ch;
+	}
+
+	.banner {
+		text-align: center;
+		font-size: 1.2rem;
+		background: var(--color-light);
+		padding: 1em 1.5em;
+		padding-left: 0.75em;
+		border-radius: 4px;
+	}
+
+	pre,
+	code {
+		font-family: var(--font-mono);
+		background: var(--color-light);
+		border-radius: 4px;
+	}
+
+	pre {
+		padding: 1em 1.5em;
+	}
+
+	.tree {
+		line-height: 1.2;
+	}
+
+	code:not(.tree) {
+		padding: 0.125em;
+		margin: 0 -0.125em;
+	}
+</style>
